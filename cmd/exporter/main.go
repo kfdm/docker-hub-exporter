@@ -62,7 +62,7 @@ func main() {
 		organisations,
 		images,
 		exporter.WithLogger(log.New(os.Stdout, "docker_hub_exporter: ", log.LstdFlags)),
-		exporter.WithTimeout(time.Second*1),
+		exporter.WithTimeout(time.Second*5),
 	)
 
 	// Register Metrics from each of the endpoints
